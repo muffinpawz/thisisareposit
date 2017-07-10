@@ -19,10 +19,10 @@ puts "10 blog posts created"
   
   puts "5 skills created"
   
-  9.times do |portfolio_item|
+  4.times do |portfolio_item|
     Portfolio.create!(
       title: "Your lie in April is so amazing #{portfolio_item}" ,
-      subtitle: "No seriously it is awesome" ,
+      subtitle: "YLIA" ,
       body: "A rainbow is never formed by chance, the blossoming colors always dance, In a whirlwind of a thousand hues.
    Under the brilliant crimson sky! I was falling so hard and I knew that my world was you.
    Its not a moment you can capture on film even so I'll never let it disappear. You are a song and every last note is carved into my heart!
@@ -32,9 +32,30 @@ puts "10 blog posts created"
    There are a thousand cherry blossoms twirling up to a silent song up there
    I spin around, and around, and around, and then spin right around!
    I'm waiting patiently for spring but I dont know if I can bare it without you around",
-      main_image: "http://placehold.it/600x400",
-      thumb_image: "http://placehold.it/350x200"
+      main_image: "http://placehold.it/600x400"
       )
         end
+        
+        5.times do |portfolio_item|
+    Portfolio.create!(
+      title: "Full Metal Alchemist Brotherhood is amazing #{portfolio_item}" ,
+      subtitle: "FMAB" ,
+      body: "Alchemy. The science of understanding, deconstructing and reconstructing matter.
+      However, it is not an all powerful art. It is impossible to create something out of nothing.
+      If one wishes to obtain something, something of equal value must be given. This is the law of
+      equivalent exchange. The basis of all alchemy. In accordance with this law, there is a taboo among
+      alchemists. Human transmutation is strictly forbidden. For what could equal the value of a human soul?",
+      main_image: "http://placehold.it/600x400",
+      )
+        end
+  1.times do |portfolio_item|
+  Portfolio.create!(
+    title: "I love the Free!!! Dub #{portfolio_item}",
+    subtitle: ".//^//.",
+    body: "Hi my name is Makoto Tachibana....
+    I've got backstrokes for days...
+    and triceps just as long")
+
+  puts "10 portfolios created" 
   
-  puts "9 portfolios created" 
+end

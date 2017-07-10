@@ -1,15 +1,8 @@
-<h1>Muffin's anime quote and random stuff blog!</h1>
+<h1>Portfolios about Full Metal Alchemist Brotherhood</h1>
 
-<a href="portfolios/new">Make a new blog post</a>
-<p>______________________________________________________</p>
+<%= link_to "Go Back!", portfolios_url %>
 
-<a href="portfolios/ylia">About Your Lie in April</a>
-<a href="portfolios/fmab">About Full Metal Alchemist Brotherhood</a>
-
-
-
-
-<% @portfolio_items.each do |portfolio_item| %>
+<% @fmab_portfolio_item.each do |portfolio_item| %>
 <p><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></p>
 <p><%=portfolio_item.subtitle%></p>
 <p><%=portfolio_item.body%></p>
@@ -17,4 +10,3 @@
 <%= link_to "Edit", edit_portfolio_path(portfolio_item) %>
 <%= link_to 'Delete', portfolio_path(portfolio_item), method: :delete, data: { confirm: 'ARE YOU 100% CERTAIN!!?!?' } %>
 <% end %>
-
