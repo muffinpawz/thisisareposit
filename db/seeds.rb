@@ -1,3 +1,11 @@
+3.times do |technology|
+  Technology.create!(
+    name: "Technology #{technology} "
+    )
+end
+
+puts "3 Technologies created"
+
 10.times do |blog|
   Blog.create!(
     title: "Bee movie script #{blog}", body: 
@@ -13,10 +21,11 @@ puts "10 blog posts created"
 
 5.times do |skill|
   Skill.create!(
-    title: "Rails #{skill}"
+    title: "Rails #{skill}",
+    percent: 15
     )
   end
-  
+
   puts "5 skills created"
   
   4.times do |portfolio_item|
