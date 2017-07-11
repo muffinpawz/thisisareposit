@@ -12,7 +12,11 @@ Rails.application.routes.draw do
   end
 end
   
+<<<<<<< HEAD
   root to: 'portfolios#index'
+=======
+  root to: 'blogs#index'
+>>>>>>> data-feature
   
 end
 
