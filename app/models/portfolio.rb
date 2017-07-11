@@ -13,7 +13,7 @@ class Portfolio < ApplicationRecord
  
  def set_defaults
    self.main_image ||= "http://placehold.it/600x400"
-   self.thumb_image ||="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRTNMjcaoUvtY3mVSwYR5YzNoPsW16OrHbcTQ-ZMT32saa0aO0:https://upload.wikimedia.org/wikipedia/commons/4/42/NewFamicom_controller.jpg"
+   self.thumb_image ||="https://placehold.it/350x200"
  end
 end
 
