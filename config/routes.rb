@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   resources :portfolios, except: [:show]
   get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
   get "portfolios/ylia", to: 'portfolios#ylia'
@@ -12,11 +13,7 @@ Rails.application.routes.draw do
   end
 end
   
-<<<<<<< HEAD
   root to: 'portfolios#index'
-=======
-  root to: 'blogs#index'
->>>>>>> data-feature
   
 end
 
