@@ -12,7 +12,7 @@ class Portfolio < ApplicationRecord
  after_initialize :set_defaults
  
  def set_defaults
-   self.main_image ||= "http://placehold.it/600x400"
+   self.main_image ||= "https://www.google.com/search?q=default&safe=strict&rlz=1c1gcea_enus754us754&source=lnms&tbm=isch&sa=x&ved=0ahukewjxio7nxzdvahvowvqkht-jaiqq_auicygc&biw=929&bih=927&surl=1&tbs=sur:fm&safe=active&#imgrc=VuUQrGkdW1J1BM:"
    self.thumb_image ||="https://placehold.it/350x200"
  end
 end
