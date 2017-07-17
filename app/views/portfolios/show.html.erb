@@ -1,4 +1,5 @@
 <h1>eNjOy tHe sHoW</h1>
+<%= link_to "Go Back!", portfolios_url %>
 
 <%= image_tag @portfolio_item.main_image unless @portfolio_item.main_image.nil? %>
 
@@ -7,3 +8,5 @@
 <em><%= @portfolio_item.subtitle %></em>
 
 <p><%= @portfolio_item.body %></p>
+
+
