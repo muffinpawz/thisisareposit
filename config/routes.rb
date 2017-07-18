@@ -8,6 +8,7 @@ devise_for :users, path: '', path_names: { sign_in: 'login',
   get 'portfolios/:id/edit', to: 'portfolios#edit'
   get "portfolios/ylia", to: 'portfolios#ylia'
   get "portfolios/fmab", to: 'portfolios#fmab'
+  get 'home', to: 'pages#home'
   get 'about', to: 'pages#about'
   get 'contact', to: 'pages#contact'
   resources :blogs do
