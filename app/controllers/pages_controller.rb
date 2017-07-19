@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+
   def home
   end
 
@@ -16,4 +17,5 @@ class PagesController < ApplicationController
   
   def mental
   end
+  
 end
