@@ -6,23 +6,21 @@
 
     <meta name="keywords" contents="<%= @seo_keywords %>" />
     
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-     
     
-    <%= login_helper %>
+     <p class="notice"><%= notice %></p>
+     <p class="alert"><%= alert %></p>
     
-     
-     <%= render "shared/dir", location: 'top' %>
-     
-     <%= source_helper("application") %>
+   
+     <%= login_helper %>
+     <%= render "shared/dir", location: 'top'  %>
      
     <%= yield %>
-    
+    <%= source_helper("portfolio") %>
+   
   </body>
 </html>

@@ -1,3 +1,10 @@
+2.times do |question|
+  Question.create!(
+    title: "What is love? #{question}"
+     )
+
+end
+
 10.times do |blog|
   Blog.create!(
     title: "Bee movie script #{blog}", body: 
@@ -15,11 +22,11 @@ puts "10 blog posts created"
   Skill.create!(
     title: "Rails #{skill}"
     )
-  end
+end
   
   puts "5 skills created"
   
-  4.times do |portfolio_item|
+4.times do |portfolio_item|
     Portfolio.create!(
       title: "Your lie in April is so amazing #{portfolio_item}" ,
       subtitle: "YLIA" ,
@@ -34,10 +41,10 @@ puts "10 blog posts created"
    I'm waiting patiently for spring but I dont know if I can bare it without you around",
       main_image: "http://placehold.it/600x400"
       )
-        end
-        
-        5.times do |portfolio_item|
-    Portfolio.create!(
+end
+      
+5.times do |portfolio_item|
+      Portfolio.create!(
       title: "Full Metal Alchemist Brotherhood is amazing #{portfolio_item}" ,
       subtitle: "FMAB" ,
       body: "Alchemy. The science of understanding, deconstructing and reconstructing matter.
@@ -47,15 +54,16 @@ puts "10 blog posts created"
       alchemists. Human transmutation is strictly forbidden. For what could equal the value of a human soul?",
       main_image: "http://placehold.it/600x400",
       )
-        end
-  1.times do |portfolio_item|
-  Portfolio.create!(
+end
+        
+1.times do |portfolio_item|
+    Portfolio.create!(
     title: "I love the Free!!! Dub #{portfolio_item}",
     subtitle: ".//^//.",
     body: "Hi my name is Makoto Tachibana....
     I've got backstrokes for days...
     and triceps just as long")
-
-  puts "10 portfolios created" 
-  
+   
+    puts "10 portfolios created" 
+      
 end
