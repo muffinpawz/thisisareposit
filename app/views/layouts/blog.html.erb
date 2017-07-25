@@ -18,11 +18,11 @@
       <%= login_helper %>
      
       <%= render "shared/dir", location: 'bottom'  %>
+      
+      <%= source_helper("blog") %>
      
     <%= yield %>
     
-    <% if session[:source] %>
-      <p>Thanks for visting me from <%= session[:source] %> </p>
-    <% end %>
+  
   </body>
 </html>
