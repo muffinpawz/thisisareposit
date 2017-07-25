@@ -1,4 +1,5 @@
 class PortfoliosController < ApplicationController
+  before_action :set_portfolio_item, only: [:edit, :show, :update, :destroy]
   layout 'portfolio'
   
   def index
@@ -22,11 +23,10 @@ class PortfoliosController < ApplicationController
   end
   
   def edit
-       @portfolio_item = Portfolio.find(params[:id]) 
+
   end
   
   def update
-    @portfolio_item = Portfolio.find(params[:id]) 
     
     respond_to do |format|
       if @portfolio_item.update(portfolio_params)
@@ -38,7 +38,6 @@ class PortfoliosController < ApplicationController
   end
   
   def show
-    @portfolio_item = Portfolio.find(params[:id]) 
     @page_title = "OwO what's this"
   end
   
@@ -61,6 +60,10 @@ class PortfoliosController < ApplicationController
   
   def ylia
     @ylia_portfolio_item = Portfolio.ylia
+  end
+  
+  def set_portfolio_item
+     @portfolio_item = Portfolio.find(params[:id]) 
   end
   
   private
