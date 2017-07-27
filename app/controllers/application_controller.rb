@@ -4,11 +4,5 @@ class ApplicationController < ActionController::Base
   include SetSource
   include CurrentUserCheck
   include SetTitleName
-  
-  before_action :set_copyright
-  
-  def set_copyright
-    @copyright = DevcanpViewTool::Renderer.copyright "Riggy Riggerson", "I'm gonna sue you"
-  end
 end 
 

@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/muffinpawz/devcanp_tool
+  revision: 75a8c8f93c87f47daa921afc71e7db36e3ab6b13
+  specs:
+    devcanp_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -177,6 +183,7 @@ DEPENDENCIES
   bootstrap (~> 4.0.0.alpha6)
   byebug
   coffee-rails (~> 4.2)
+  devcanp_tool!
   devise (~> 4.3)
   friendly_id (~> 5.1)
   jbuilder (~> 2.5)
