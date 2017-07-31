@@ -15,27 +15,19 @@
 
   <body>
    <div class="site-wrapper">
-  
       <div class="sit-wrapper-inner">
-     
           <div class="cover-container">
-     
     
-                  <%= login_helper %>
-    
-                  <%= render "shared/application_nav" %>
-     
-                  <%= source_helper("application") %>
-     
-                  <%= yield %>
-                 
-                  <%= copyright_generator %>
-                  
-          </div>
-            
-       </div>
+            <%= render "shared/application_nav" %>
        
-     </div>
+            <%= yield %>
+           
+            <%= render "shared/application_footer" %>
     
+            <%= source_helper("application") %>
+            
+          </div>
+       </div>
+     </div>
   </body>
 </html>
