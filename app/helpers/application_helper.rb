@@ -8,7 +8,7 @@ module ApplicationHelper
       (link_to "Logout", destroy_user_session_path, method: :delete, class: style) +
       " ".html_safe +
       (link_to "Edit Profile",  edit_user_registration_path, class: style)
-    end 
+    end
   end
   
   def source_helper(layout_name)
@@ -17,8 +17,7 @@ module ApplicationHelper
         content_tag(:p, greeting, class: "thisisa-greeting")
       end 
   end
-    
-    
+   
   def copyright_generator
     @copyright = DevcanpTool::Renderer.copyright "Riggy Riggerson", "I'm gonna sue you"
   end
