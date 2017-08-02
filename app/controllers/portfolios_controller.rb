@@ -11,6 +11,7 @@ class PortfoliosController < ApplicationController
   def new
     @portfolio_item = Portfolio.new
   end
+
   
   def create
     @portfolio_item = Portfolio.new(portfolio_params)
