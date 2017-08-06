@@ -39,7 +39,7 @@ end
    There are a thousand cherry blossoms twirling up to a silent song up there
    I spin around, and around, and around, and then spin right around!
    I'm waiting patiently for spring but I dont know if I can bare it without you around",
-      main_image: "http://placehold.it/600x400"
+      main_image: "http://www.cams-it.com/wp-content/uploads/2015/05/default-placeholder-350x200.png"
       )
 end
       
