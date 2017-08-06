@@ -1,22 +1,9 @@
-<h1>Editing Mode</h1>
-
-<%= form_for(@portfolio_item) do |f| %>
- <div class="field">
-    <%= f.label :title %>
-    <%= f.text_field :title %>
-  </div>
+<div class='container portfolio-form'>
   
- <div class="field">
-    <%= f.label :subtitle %>
-    <%= f.text_field :subtitle %>
-  </div>
+  <h1>Editing Mode</h1>
+  <%= render 'form', portfolio: @portfolio_item %>
 
-  <div class="field">
-    <%= f.label :body %>
-    <%= f.text_area :body %>
-  </div>
+  <%= link_to "Go Back!", portfolios_url %>
 
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+</div>
+
