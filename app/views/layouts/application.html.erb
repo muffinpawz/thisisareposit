@@ -25,12 +25,15 @@
             loop: true,
             muted: true,
             ) %>
+            
     
             <%= render "shared/application_nav" %>
        
             <%= yield %>
            
             <%= render "shared/application_footer" %>
+            
+            <%= render 'shared/alerts' %>
     
             <%= source_helper("application") %>
           </div>
