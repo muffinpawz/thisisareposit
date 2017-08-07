@@ -1,12 +1,18 @@
-<h1>eNjOy tHe sHoW</h1>
-<%= link_to "Go Back!", portfolios_url %>
-
-<%= image_tag @portfolio_item.main_image unless @portfolio_item.main_image.nil? %>
-
-<h1><%= @portfolio_item.title %></h1>
-
-<em><%= @portfolio_item.subtitle %></em>
-
-<p><%= @portfolio_item.body %></p>
-
-
+<div class='container'>
+  <div class='row'>
+     <div class="col-md-7">
+       <%= image_tag @portfolio_item.main_image %>
+     </div>
+     
+     <div class="col-md-5">
+       <h1><%= @portfolio_item.title %></h1>
+       
+       <hr>
+       
+       <em><%= @portfolio_item.subtitle %></em>
+       
+       <p><%= @portfolio_item.body %></p>
+       <%= link_to "Go Back!", portfolios_url %>
+     </div>
+  </div>
+</div>
