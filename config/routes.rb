@@ -2,9 +2,10 @@ Rails.application.routes.draw do
 
   resources :questions
 devise_for :users, path: '', path_names: { sign_in: 'login',
-  sign_out: 'logout', sign_up: 'register', edit: 'edit' }
-
-  resources :portfolios, except: [:show]
+sign_out: 'logout', sign_up: 'register', edit: 'edit' }
+  resources :portfolios, except: [:show] do 
+     put :sort, on: :collection
+  end
   get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
   get 'portfolios/:id/edit', to: 'portfolios#edit'
   get "portfolios", to: 'portfolios#index'
