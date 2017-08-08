@@ -30,6 +30,14 @@ end
       main_image: "http://www.cams-it.com/wp-content/uploads/2015/05/default-placeholder-350x200.png"
       )
 end
+
+3.times do |topic|
+  Topic.create!(
+    title: "Topic #{topic}"
+  )
+end
+
+puts "3 Topics created"
       
 5.times do |portfolio_item|
       Portfolio.create!(
